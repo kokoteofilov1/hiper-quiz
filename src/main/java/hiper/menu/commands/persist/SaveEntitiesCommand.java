@@ -1,9 +1,6 @@
 package hiper.menu.commands.persist;
 
 import hiper.dao.*;
-import hiper.exceptions.EntityAlreadyExistsException;
-import hiper.exceptions.EntityNotFoundException;
-import hiper.exceptions.MissingKeyGeneratorException;
 import hiper.menu.commands.Command;
 import hiper.models.AllCollections;
 import lombok.extern.slf4j.Slf4j;

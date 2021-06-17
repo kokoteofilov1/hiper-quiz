@@ -6,7 +6,7 @@ import hiper.menu.commands.Command;
 import hiper.menu.util.input.InputIdUtil;
 
 public class DeleteUserCommand implements Command {
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     public DeleteUserCommand(UserRepository userRepository) {
         this.userRepository = userRepository;

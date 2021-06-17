@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadAllUsersCommand implements Command {
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     public ReadAllUsersCommand(UserRepository userRepository) {
         this.userRepository = userRepository;

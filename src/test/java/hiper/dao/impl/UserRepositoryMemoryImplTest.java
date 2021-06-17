@@ -8,12 +8,13 @@ import hiper.models.Gender;
 import hiper.models.Role;
 import hiper.models.User;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.*;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
 public class UserRepositoryMemoryImplTest {

@@ -7,7 +7,7 @@ import hiper.menu.util.input.InputUserUtil;
 import hiper.models.User;
 
 public class UpdateUserCommand implements Command {
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     public UpdateUserCommand(UserRepository userRepository) {
         this.userRepository = userRepository;

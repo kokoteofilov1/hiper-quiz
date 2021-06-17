@@ -18,13 +18,13 @@ public final class InputQuizUtil {
         Quiz quiz = new Quiz();
 
         System.out.print("title: ");
-        String title = console.nextLine().replaceAll("\\s+", "");
+        String title = console.nextLine().trim();
         //TODO validate
         quiz.setTitle(title);
 
         System.out.printf("Which user created this quiz? Select user ID:%n" +
                 "ID: ");
-        long id = Long.parseLong(console.nextLine().replaceAll("\\s+", ""));
+        long id = Long.parseLong(console.nextLine().trim());
         //TODO validate
         Optional<User> user = userRepository.findById(id);
         user.ifPresent(quiz::setAuthor);
@@ -35,13 +35,13 @@ public final class InputQuizUtil {
         quiz.setDescription(description);
 
         System.out.print("expectedDuration: ");
-        int expectedDuration = Integer.parseInt(console.nextLine().replaceAll("\\s+", ""));
+        int expectedDuration = Integer.parseInt(console.nextLine().trim());
         //TODO validate
         quiz.setExpectedDuration(expectedDuration);
 
         System.out.printf("Enter tags separated by commas:%n" +
                 "tags: ");
-        String tags = console.nextLine().replaceAll("\\s+", "");
+        String tags = console.nextLine().trim();
         //TODO validate
         quiz.setTags(tags);
 

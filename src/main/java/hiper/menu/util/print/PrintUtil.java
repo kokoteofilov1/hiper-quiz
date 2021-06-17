@@ -1,7 +1,5 @@
 package hiper.menu.util.print;
 
-import hiper.menu.util.print.Alignment;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;

@@ -17,28 +17,29 @@ public final class InputUserUtil {
         User user = new User();
 
         System.out.print("username: ");
-        String username = console.nextLine().replaceAll("\\s+", "");
+        String username = console.nextLine().trim();
         //TODO validate username
         user.setUsername(username);
 
         System.out.print("email: ");
-        String email = console.nextLine().replaceAll("\\s+", "");
+        String email = console.nextLine().trim();
+        //TODO validate email
         user.setEmail(email);
 
         System.out.print("password: ");
-        String password = console.nextLine().replaceAll("\\s+", "");
+        String password = console.nextLine().trim();
         //TODO validate password
         user.setPassword(password);
 
         System.out.printf("Choose from the following: [MALE, FEMALE]%n" +
                 "gender: ");
-        String gender = console.nextLine().replaceAll("\\s+", "").toUpperCase();
+        String gender = console.nextLine().trim().toUpperCase();
         //TODO validate gender
         user.setGender(Gender.valueOf(gender));
 
         System.out.printf("Choose from the following: [PLAYER, ADMINISTRATOR]%n" +
                 "role: ");
-        String role = console.nextLine().replaceAll("\\s+", "").toUpperCase();
+        String role = console.nextLine().trim().toUpperCase();
         //TODO validate role
         user.setRole(Role.valueOf(role));
 

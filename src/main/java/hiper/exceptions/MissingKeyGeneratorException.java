@@ -1,8 +1,7 @@
 package hiper.exceptions;
 
-public class MissingKeyGeneratorException extends Throwable {
+public class MissingKeyGeneratorException extends Exception {
     public MissingKeyGeneratorException() {
-        super();
     }
 
     public MissingKeyGeneratorException(String message) {

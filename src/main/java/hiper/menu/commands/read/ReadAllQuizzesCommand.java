@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadAllQuizzesCommand implements Command {
-    QuizRepository quizRepository;
+    private QuizRepository quizRepository;
 
     public ReadAllQuizzesCommand(QuizRepository quizRepository) {
         this.quizRepository = quizRepository;

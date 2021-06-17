@@ -10,8 +10,8 @@ import hiper.menu.util.input.InputQuizUtil;
 import hiper.models.Quiz;
 
 public class UpdateQuizCommand implements Command {
-    QuizRepository quizRepository;
-    UserRepository userRepository;
+    private QuizRepository quizRepository;
+    private UserRepository userRepository;
 
     public UpdateQuizCommand(QuizRepository quizRepository, UserRepository userRepository) {
         this.quizRepository = quizRepository;

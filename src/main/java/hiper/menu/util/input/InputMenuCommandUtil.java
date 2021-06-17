@@ -20,7 +20,7 @@ public final class InputMenuCommandUtil {
                 "action: ");
 
         //read command action from user input
-        String commandAction = console.nextLine().replaceAll("\\s+", "").toUpperCase();
+        String commandAction = console.nextLine().trim().toUpperCase();
 
         return commandAction;
     }
@@ -32,7 +32,7 @@ public final class InputMenuCommandUtil {
                 "entity: ");
 
         //read command entity from user input
-        String commandEntity = console.nextLine().replaceAll("\\s+", "").toUpperCase();
+        String commandEntity = console.nextLine().trim().toUpperCase();
 
         return commandEntity;
     }

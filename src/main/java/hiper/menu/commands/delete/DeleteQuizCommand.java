@@ -6,7 +6,7 @@ import hiper.menu.commands.Command;
 import hiper.menu.util.input.InputIdUtil;
 
 public class DeleteQuizCommand implements Command {
-    QuizRepository quizRepository;
+    private QuizRepository quizRepository;
 
     public DeleteQuizCommand(QuizRepository quizRepository) {
         this.quizRepository = quizRepository;

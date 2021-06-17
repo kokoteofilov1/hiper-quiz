@@ -13,7 +13,7 @@ public interface Repository<K, V extends Identifiable<K>> {
     List<V> findAll();
     Optional<V> findById(K id);
     V create(V entity) throws EntityAlreadyExistsException, MissingKeyGeneratorException;
-    int createBatch(Collection<V> entities) throws EntityAlreadyExistsException;
+    List<V> createBatch(Collection<V> entities) throws EntityAlreadyExistsException;
     V update(V entity) throws EntityNotFoundException;
     V deleteById(K id) throws EntityNotFoundException;
     long count();

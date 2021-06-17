@@ -12,7 +12,7 @@ public abstract class InputIdUtil {
     public static long getId() {
         System.out.printf("Enter ID for entity you want to modify:%n" +
                 "ID: ");
-        long id = Long.parseLong(console.nextLine().replaceAll("\\s+", ""));
+        long id = Long.parseLong(console.nextLine().trim());
 
         return id;
     }
